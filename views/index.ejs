@@ -1,0 +1,232 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hacker Bootstrap Theme</title>
+    <link href="https://brobin.github.io/hacker-bootstrap/css/hacker.css" rel="stylesheet">
+
+    <style>
+    .tall-row {
+        margin-top: 40px;
+    }
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://github.com/brobin/hacker-bootstrap"><img style="position: absolute; top: 0; left: 0; border: 0;z-index:1001;" src="img/fork.png" alt="Fork me on GitHub"></a>
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Hacker Bootstrap Theme</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CLICK ME!!!<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Ooh a link</a></li>
+                            <li><a href="#">Two links?! Oh boy</a></li>
+                            <li><a href="#">Now you're being ridiculous</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Much Wow</li>
+                            <li><a href="#">So link</a></li>
+                            <li><a href="#">Many internet</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="//reddit.com/r/itsaunixsystem" target="_blank">H4x0rs Only</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+      
+      
+        <!-- Forms -->
+        <div class="row tall-row">
+            <div class="col-lg-12">
+                <h1>Forms</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="well">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <legend>Legend</legend>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                                <div class="col-lg-10">
+                                    <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+                                <div class="col-lg-10">
+                                    <textarea class="form-control" rows="3" id="textArea"></textarea>
+                                    <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">Radios</label>
+                                <div class="col-lg-10">
+                                    <div class="radio">
+                                        <label>
+                                            <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+                                            Option one is this
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+                                            Option two can be something else
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="select" class="col-lg-2 control-label">Selects</label>
+                                <div class="col-lg-10">
+                                    <select class="form-control" id="select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <br>
+                                    <select multiple="" class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <button type="reset" class="btn btn-default">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+                <form class="bs-component">
+                    <div class="form-group">
+                        <label class="control-label" for="focusedInput">Focused input</label>
+                        <input class="form-control" id="focusedInput" value="This is focused..." type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="disabledInput">Disabled input</label>
+                        <input class="form-control" id="disabledInput" placeholder="Disabled input here..." disabled="" type="text">
+                    </div>
+                    <div class="form-group has-warning">
+                        <label class="control-label" for="inputWarning">Input warning</label>
+                        <input class="form-control" id="inputWarning" type="text">
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="inputError">Input error</label>
+                        <input class="form-control" id="inputError" type="text">
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess">Input success</label>
+                        <input class="form-control" id="inputSuccess" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="inputLarge">Large input</label>
+                        <input class="form-control input-lg" id="inputLarge" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="inputDefault">Default input</label>
+                        <input class="form-control" id="inputDefault" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="inputSmall">Small input</label>
+                        <input class="form-control input-sm" id="inputSmall" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Input addons</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input class="form-control" type="text">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Button</button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Navs -->
+        
+        
+
+        <!-- Panels -->
+        
+        
+
+        <!-- List Groups -->
+        
+        
+
+        <!-- Wells -->
+        
+        
+
+        <!-- Alerts -->
+        
+        
+
+        <!-- Dialogs -->
+        
+        
+
+        
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
+</body></html>

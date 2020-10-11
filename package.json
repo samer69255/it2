@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.48",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "instagram-web-api": "^2.2.2",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0",
+    "telegraf": "^3.35.0",
+    "tough-cookie-filestore": "0.0.1",
+    "tough-cookie-filestore2": "^1.0.0",
+    "unescape-js": "^1.1.4",
+    "user": "0.0.0"
+  }
+}
