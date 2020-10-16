@@ -5,7 +5,7 @@ var request = require("request");
 const FileCookieStore = require('tough-cookie-filestore2');
 const Telegraf = require('telegraf');
 var {Check, InitY, InitH, reset} = require('../yaho/yaho');
-var {reportSpam, reportSol, reportScam} = require("./report.js");
+var {reportSpam, reportSol, reportScam, reportDr} = require("./report.js");
 var fs = require("fs");
 var u = 0;
 var reply;
@@ -93,6 +93,7 @@ function start() {
   if (Config.type == '1') var report = reportSpam;
   else if (Config.type == '2') var report = reportScam;
   else if (Config.type == '3') var report = reportSol;
+  else if (Config.type == '4') var report = reportDr;
   for (var i in accounts) {
     var c = accounts[i];
     var n = 0;
@@ -114,7 +115,7 @@ function start() {
       //console.log(`res: ${JSON.stringify(s)}`);
       if (++n == accounts.length) {
         if (Config.Start) {
-          await sleep(5000);
+          await sleep(2500);
           start();
         }
       }
@@ -271,7 +272,7 @@ bot.use(async (ctx, next) => {
   }
 
     else if (Config.cmd == 'type') { 
-      if (text == '1' || text == '2' || text == '3') {
+      if (text == '1' || text == '2' || text == '3' || text == '4') {
         Config.type = text;
         Config.cmd = '';
         saveConfig();
@@ -307,6 +308,7 @@ bot.hears(/\/setType|تغير النوع/, ctx => {
   1 => سبام
   2 => سكام
   3 => اغواء جنسي
+  4 => مخدرات
   -----------`);
   Config.cmd = 'type';
 });

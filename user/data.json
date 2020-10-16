@@ -8,8 +8,10 @@
     "time": 360,
     "times": "2",
     "users": [
+        {},
         {
-            
+            "email": "smmooiuu",
+            "pass": "Samer~999"
         }
     ],
     "report": {
@@ -22,10 +24,11 @@
     "run": 0,
     "i": 0,
     "len": 0,
-    "uid": "2044611080",
+    "uid": "1778947782",
     "cmd": "",
     "up": {
-        
+        "id": "1778947782",
+        "username": "c.5y"
     },
-    "type": "1"
+    "type": "4"
 }
